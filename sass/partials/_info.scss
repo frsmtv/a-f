@@ -1,0 +1,151 @@
+@import "mixins";
+
+#info {
+  div.section {
+    height: 100vh;
+    @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
+      height: auto;
+      margin-bottom: 50px;
+    }
+    &:last-child {
+      height: 50vh;
+      @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
+        height: auto;
+      }
+    }
+    p {
+      color: #000;
+      position: relative;
+      text-align: justify;
+      margin: 10% 0;
+      padding: 2%;
+      @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
+        margin: 5% 0;
+        font-size: 95%;
+      }
+      &:first-child {
+        margin-top: 0;
+      }
+      span#brand {
+        color: $mainColor;
+        font-size: 4rem;
+        text-transform: uppercase;
+        @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
+          font-size: 2rem;
+        }
+      }
+    }
+    q {
+      font-style: italic;
+      padding: 2%;
+    }
+    h3, h4 {
+      font-size: 2rem;
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      line-height: 1.5;
+      color: $mainColor;
+      // padding: 1%;
+      @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
+      font-size: .8rem;
+      }
+    }
+    h5{
+      text-transform: uppercase;
+      font-size: 90%;
+      color: #000;
+      margin-top: -40px;
+      letter-spacing: 2px;
+    }
+    div.vertical-line {
+      width: 1px;
+      height: 350px;
+      background: $mainColor;
+      margin: auto;
+      margin-top: 40px;
+      @media screen and (max-device-width: 740px) {
+        display: none;
+      }
+      @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+        height: 600px;
+      }
+      @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        display: none;
+      }
+    }
+    article {
+      ul {
+        color: #000;
+        letter-spacing: 2px;
+        padding: 2%;
+        font-family: $navFont;
+        font-size: 95%;
+        line-height: 2;
+        padding: 0;
+        @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
+          font-size: 80%;
+          padding: 2%;
+        }
+      }
+    }
+    // Arrows
+    img {
+      display: block;
+      margin: 0 auto;
+      height: 30px;
+      @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
+        height: 20px;
+      }
+      @media only screen and (min-width : 1224px) and (max-device-width : 1824px){
+        height: 25px;
+      }
+      -webkit-transition: all 200ms ease-in;
+      -moz-transition: all 200ms ease-in;
+      -ms-transition: all 200ms ease-in;
+      -o-transition: all 200ms ease-in;
+      transition: all 200ms ease-in;
+      &.down {
+        // position: absolute;
+        // left: 50%;
+        // bottom: 15vh;
+        margin-top: 10%;
+      }
+      &.up {
+        position: absolute;
+        left: 50%;
+        top: 0;
+      }
+      &.down:hover {
+        -moz-transform: scale(1) rotate(0deg) translateX(0px) translateY(10px) skewX(0deg) skewY(0deg);
+  -webkit-transform: scale(1) rotate(0deg) translateX(0px) translateY(10px) skewX(0deg) skewY(0deg);
+  -o-transform: scale(1) rotate(0deg) translateX(0px) translateY(10px) skewX(0deg) skewY(0deg);
+  -ms-transform: scale(1) rotate(0deg) translateX(0px) translateY(10px) skewX(0deg) skewY(0deg);
+  transform: scale(1) rotate(0deg) translateX(0px) translateY(10px) skewX(0deg) skewY(0deg);
+      }
+      &.up:hover {
+        -moz-transform: scale(1) rotate(0deg) translateX(0px) translateY(-10px) skewX(0deg) skewY(0deg);
+  -webkit-transform: scale(1) rotate(0deg) translateX(0px) translateY(-10px) skewX(0deg) skewY(0deg);
+  -o-transform: scale(1) rotate(0deg) translateX(0px) translateY(-10px) skewX(0deg) skewY(0deg);
+  -ms-transform: scale(1) rotate(0deg) translateX(0px) translateY(-10px) skewX(0deg) skewY(0deg);
+  transform: scale(1) rotate(0deg) translateX(0px) translateY(-10px) skewX(0deg) skewY(0deg);
+      }
+    }
+    .img-wrapper {
+      width: 100%;
+      margin-top: 60px;
+      margin-bottom: 50px;
+      display: flex;
+      justify-content: space-between;
+      @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
+      flex-direction: column;
+      }
+      img {
+        height: 30px;
+        @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
+        margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}

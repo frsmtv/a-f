@@ -1,0 +1,44 @@
+@import "mixins";
+
+footer {
+  display: none!important;
+  position: fixed;
+  top: 44%;
+  right: -20px;
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
+    display: none;
+  }
+  a:hover {
+  }
+  p {
+    margin: 0;
+  }
+  div ul {
+    display: flex;
+    justify-content: space-between;
+    li {
+      margin-left: 80px;
+      i {
+        -webkit-transition: all 200ms ease-in;
+        -moz-transition: all 200ms ease-in;
+        -ms-transition: all 200ms ease-in;
+        -o-transition: all 200ms ease-in;
+        transition: all 200ms ease-in;
+        &:hover {
+        -moz-transform: scale(1) rotate(0deg) translateX(0px) translateY(-10px) skewX(0deg) skewY(0deg);
+        -webkit-transform: scale(1) rotate(0deg) translateX(0px) translateY(-10px) skewX(0deg) skewY(0deg);
+        -o-transform: scale(1) rotate(0deg) translateX(0px) translateY(-10px) skewX(0deg) skewY(0deg);
+        -ms-transform: scale(1) rotate(0deg) translateX(0px) translateY(-10px) skewX(0deg) skewY(0deg);
+        transform: scale(1) rotate(0deg) translateX(0px) translateY(-10px) skewX(0deg) skewY(0deg);
+        }
+      }
+    }
+  }
+}

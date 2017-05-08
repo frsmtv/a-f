@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="TYPED IN">
+    <meta name="description" content="Typed in est un studio web basé à Lyon.">
+    <title>typed in - Studio web | Lyon</title>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
+
+    <!-- FAVICON -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/overlay.css">
+    <link rel="stylesheet" href="css/bundle-sass.css">
+</head>
+
+<body class="animated fadeIn">
+
+<!-- MAIN CONTENT -->
+<main id="panning" class="panning">
+
+    <!-- ERROR -->
+    <div id="error">
+
+      <h1>erreur 404 | vous êtes perdu</h1>
+
+      <q cite="">Citation aléatoire ici</q>
+
+      <!-- HOUSTON LINK -->
+      <a id="houston" href="#">retour sur Terre</a>
+
+      <!-- HOUSTON NAV -->
+      <div id="houston-nav">
+
+        <ul>
+
+          <li><a href="info.html">retour vers notre page info</a></li>
+          <li><a href="portfolio.html">retour vers notre portfolio</a></li>
+          <li><a href="contact.html">contactez-nous !</a></li>
+
+        </ul>
+
+      </div>
+
+    </div> <!-- END: error -->
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/overlay.js"></script>
+<script src="js/motio.min.js"></script>
+<script src="js/main.js"></script>
+
+<!-- MOTIO -->
+<script type="text/javascript">
+  // Panning
+  var element = document.querySelector('#panning');
+  var panning = new Motio(element, {
+  fps: 30, // Frames per second. More fps = higher CPU load.
+  speedX: -30 // Negative horizontal speed = panning to left.
+  });
+  panning.play(); // start animation
+</script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+@import "mixins";
+
+#intro {
+  // background: url('../img/bg.jpg');
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center bottom;
+}
+#intro, #success {
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -ms-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+  width: 90%;
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Yep! */
+  @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
+  width: 100%;
+  }
+  p {
+    padding: 20px;
+    font-family: $mainFont;
+    text-transform: uppercase;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 1.5!important;
+    webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
+    font-size: 1.5rem;
+    text-align: justify;
+    letter-spacing: 2px;
+    padding: 5vh;
+    }
+    i {
+      font-size: 1rem;
+      vertical-align: super;
+    }
+    span {
+      border-right: 1px solid $mainColor;
+      margin-right: 2%;
+      padding-left: 0;
+      &:last-child {
+        font-size: 60%;
+        border: none;
+      }
+    }
+  }
+}

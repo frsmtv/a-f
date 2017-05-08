@@ -1,0 +1,51 @@
+@import "mixins";
+
+form {
+  width: 90vw;
+  display: block;
+  margin: 0 auto;
+  padding-top: 5vh;
+  label.active, input.field, textarea {
+    color: $mainColor!important;
+  }
+  textarea:focus {
+    border-bottom: 1px solid $mainColor!important;
+    box-shadow: none!important;
+  }
+  span.lever::after {
+    background: $mainColor!important;
+  }
+  .switch label input[type=checkbox]:checked + .lever {
+    background-color: $mainColor!important;
+  }
+  input:focus {
+    border-bottom: 1px solid $mainColor!important;
+    box-shadow: 0 1px 0 0 $mainColor!important;
+  }
+  input.valid, label.invalid {
+    color: #DFDFDF;
+    border-bottom: 1px solid $mainColor!important;
+    box-shadow: 0 1px 0 0 $mainColor!important;
+  }
+  input.invalid {
+    color: #DFDFDF;
+    border-bottom: 1px solid #DFDFDF!important;
+    box-shadow: 0 1px 0 0 #DFDFDF!important;
+  }
+  button, .btn, .btn-large .waves-effect, .waves-light {
+    margin-top: 50px;
+    letter-spacing: 2px;
+    background-color: $mainColor!important;
+    -webkit-transition: all 400ms ease-in;
+    -moz-transition: all 400ms ease-in;
+    -ms-transition: all 400ms ease-in;
+    -o-transition: all 400ms ease-in;
+    transition: all 400ms ease-in;
+    &:hover {
+      opacity: .5;
+    }
+  }
+  p {
+    font-style: italic;
+  }
+}

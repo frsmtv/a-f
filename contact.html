@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="a+f">
+    <meta name="description" content="a+f est un studio web basé à Lyon.">
+    <title>a+f - Studio web | Lyon</title>
+
+    <!--**** FONTS ****-->
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+    <!--**** FAVICON ****-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/overlay.css">
+    <link rel="stylesheet" href="css/ap-fullscreen-modal.css">
+    <link rel="stylesheet" href="css/bundle-sass.css">
+</head>
+
+<body class="animated fadeIn">
+
+<!--**** HEADER ****-->
+<header>
+
+    <!-- MAIN NAV -->
+    <nav id="main-nav">
+        <span><a class="non-active bottom-left" href="index.html">a+f</a> </span>
+        <span><a class="non-active top-left" href="portfolio.html">portfolio</a> </span>
+        <span><a class="non-active top-right"  href="info.html">info</a> </span>
+        <span><a class="active bottom-right" href="contact.html">contact</a> </span>
+    </nav>
+
+    <!-- **** MOBILE NAV **** -->
+    <div id="mobile-nav">
+        <h1><a href="index.html">a+f</a></h1>
+
+        <div class="navbar-header">
+            <span id="toggle" class="toggle-button">me<br>
+            nu</span>
+        </div>
+
+        <nav id="overlay" class="overlay animated fadeIn">
+
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="info.html">info</a></li>
+                <li><a href="portfolio.html">portfolio</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+
+        </nav>
+
+    </div> <!-- End: mobile-nav -->
+
+</header>
+
+<!--**** MAIN CONTENT ****-->
+<main>
+
+  <div id="frame"></div>
+
+    <!--**** CONTACT ****-->
+    <section id="contact" class="animated fadeIn">
+
+        <ul>
+          <li><span id="e699192673">Enable javascript to display email.</span></li>
+          <li><a class="btn" href="#formulaire" id="formlink">contactez-nous</a></li>
+        </ul>
+
+
+    <!-- **** MODAL > CONTACT FORM **** -->
+    <div style="display: none;">
+
+        <div id="formulaire" class="modal-content">
+            <div class="wrapper">
+
+              <form class="col s12" method="POST" action="contact" enctype="multipart/form-data">
+
+                	<input type="hidden" name="_token" value="qt1z1umCc5pf5T95SFOF6nEu5meng2TpmMTsmtwe">
+
+        	        <div class="row">
+
+            				<div class="input-field col s2">
+            					<i class="material-icons prefix">account_circle</i>
+            				</div>
+
+            				<div class="input-field col s5">
+            					<input type="text" class="validate require" id="first_name" name="first_name" required>
+                  				<label for="first_name">Quel est votre prénom ?*</label>
+            				</div>
+
+            				<div class="input-field col s5">
+                      <input type="text" class="validate require" id="last_name" name="last_name" required>
+            					<label for="last_name">Quel est votre nom ?*</label>
+            				</div>
+
+                  </div>
+
+                  <div class="row">
+
+                      <div class="input-field col s2">
+                          <i class="material-icons prefix">work</i>
+                      </div>
+
+                      <div class="input-field col s5">
+                          <input type="text" class="validate" id="company" name="company">
+                          <label for="company">Quel est le nom de votre groupe / association / société ?</label>
+                      </div>
+
+                      <div class="input-field col s5">
+                          <input type="text" class="validate" id="website" name="website">
+                          <label for="website">Avez-vous déjà un site web ?</label>
+                      </div>
+
+                  </div>
+
+                  <div class="row">
+
+                    <div class="input-field col s2">
+                        <i class="material-icons prefix">email</i>
+                    </div>
+
+                    <div class="input-field col s5">
+                        <input type="email" class="validate require" id="email" name="email" required>
+                        <label for="email">A quelle adresse pouvons-nous vous contacter ?*</label>
+                    </div>
+
+                  </div>
+
+                  <div class="row">
+
+                    <div class="input-field col s2">
+                        <i class="material-icons prefix">mode_edit</i>
+                    </div>
+
+                    <div class="input-field col s10">
+                        <!-- <textarea id="message" class="materialize-textarea"></textarea> -->
+                        <textarea class="materialize-textarea" id="message" name="message" required></textarea>
+                        <label for="message">Quel est votre message ? (Précisez votre <b>budget</b> et le <b>délai de livraison</b> souhaité)*</label>
+                    </div>
+
+                  </div>
+
+                  <p>*Champs obligatoires</p>
+
+                  <!-- make it disable if all the fields are not filled in -->
+                  <div style="text-align:center" class="row">
+
+                    <button id="envoyer" class="disabled btn waves-effect" type="submit" name="action">Envoyer
+                    <i class="material-icons right">send</i>
+                    </button>
+
+                  </div>
+
+              </form>
+
+            </div> <!-- End: wrapper -->
+
+        </div> <!-- End: modal-content-1 -->
+
+    </div> <!-- End: Modal > contact form -->
+
+  </section> <!-- END: contact -->
+
+</main>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/overlay.js"></script>
+<script src="js/ap-fullscreen-modal.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/main.js"></script>
+
+<!-- EMAIL ENCRIPT -->
+<script type="text/javascript">/*<![CDATA[*/eval("var a=\"p_LO0hP-ebTRIz4cuJmitKvSG.lqakMUBENgnWHy2QF31xD96oC5j8fAVs7rwXdZY@+\";var b=a.split(\"\").sort().join(\"\");var c=\"6xjjAzQ_DLrwX1oA\";var d=\"\";for(var e=0;e<c.length;e++)d+=b.charAt(a.indexOf(c.charAt(e)));document.getElementById(\"e699192673\").innerHTML=\"<a href=\\\"mailto:\"+d+\"\\\">\"+d+\"</a>\"")/*]]>*/</script>
+
+<!-- MODAL -->
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#formulaire').apFullscreenModal({
+       openSelector: '#formlink',
+       closeSelector: '.close-modal, #send-1'
+     });
+  });
+</script>
+
+</body>
+</html>
