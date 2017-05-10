@@ -3,7 +3,7 @@
     top: 20px;
     right: 20px;
     cursor: pointer;
-    border: 1px solid #0000ff;
+    border: 1px solid #c59437;
     padding: 2%;
     margin-top: 0!important;
     z-index: 2001;
@@ -45,7 +45,7 @@
 
 .overlay {
     position: fixed;
-    background: #0000FF;
+    background: #000;
     z-index: 2000;
     top: 0;
     left: 0;
@@ -69,7 +69,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%); /* Yep! */
-    color: #fff;
+    color: #c59437;
     font-size: 2rem;
     text-align: center;
     list-style: none;

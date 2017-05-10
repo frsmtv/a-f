@@ -21,7 +21,7 @@
       padding: 2%;
       @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
         margin: 5% 0;
-        font-size: 95%;
+        // font-size: 95%;
       }
       &:first-child {
         margin-top: 0;
@@ -48,7 +48,8 @@
       color: $mainColor;
       // padding: 1%;
       @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
-      font-size: .8rem;
+      font-size: 2rem;
+      line-height: 1;
       }
     }
     h5{
