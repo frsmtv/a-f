@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="TYPED IN">
+    <meta name="description" content="Typed in est un studio web basé à Lyon.">
+    <title>typed in - Studio web | Lyon</title>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
+    <!-- FAVICON -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/animate.min.css">
+    <link rel="stylesheet" href="/css/overlay.css">
+    <link rel="stylesheet" href="/css/bundle-sass.css">
+</head>
+<body class="animated fadeIn">
+	<!-- FRAME -->
+	<div id="frame">
+	</div>
+<!-- MAIN CONTENT -->
+<main id="panning" class="panning">
+		<div id="error">
+		<h1>erreur 404 | vous êtes perdu</h1>
+		<q>D&#039;accord, faisons comme ça, ravi de t&#039;avoir revu l&#039;ami.</q>
+		<span id="credits">
+							Hubert Bonisseur de La Bath
+										OSS177, Rio ne répond plus
+					</span>
+		<!-- HOUSTON LINK -->
+	<a id="houston" href="#">retour sur terre, on modifiera d't'façons</a>
+	<!-- HOUSTON NAV -->
+	<div id="houston-nav">
+		<ul>
+			<li>
+				<a href="https://a-f.studio/info">info</a>
+			</li>
+			<li>
+				<a href="https://a-f.studio/portfolio">portfolio</a>
+			</li>
+			<li>
+				<a href="https://a-f.studio/contact">contact</a>
+			</li>
+		</ul>
+	</div>
+	</div>
+</main>
+<!-- FOOTER -->
+<footer>
+</footer>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/overlay.js"></script>
+<script src="/js/motio.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- MOTIO -->
+<script type="text/javascript">
+	// Panning
+	var element = document.querySelector('#panning');
+	var panning = new Motio(element, {
+		fps: 30, // Frames per second. More fps = higher CPU load.
+		speedX: -30 // Negative horizontal speed = panning to left.
+	});
+	panning.play(); // start animation
+</script>
+
+</body>
+</html>
