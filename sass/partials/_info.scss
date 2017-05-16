@@ -2,7 +2,7 @@
 
 .info {
   div.section {
-    margin-bottom: 200px;
+    // margin-top: -40px;
     @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
       margin-bottom: 50px;
     }
@@ -43,7 +43,7 @@
       display: inline-block;
       // text-transform: uppercase;
       letter-spacing: 2px;
-      line-height: 1.5;
+      line-height: 1;
       color: $mainColor;
       // padding: 1%;
       @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
@@ -64,9 +64,9 @@
       }
     }
     div.vertical-line {
-      display: none;
+      // display: none;
       width: 1px;
-      height: 250px;
+      height: 50vh;
       background: $mainColor;
       margin: auto;
       margin-top: 40px;
