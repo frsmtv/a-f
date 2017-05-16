@@ -59,11 +59,7 @@
 <!--**** MAIN CONTENT ****-->
 <main>
 
-    <div id="fullpage">
-
-      <div id="frame"></div>
-
-      <section id="info">
+      <section class="info">
 
           <div class="section animated fadeIn">
 
@@ -78,57 +74,51 @@
 
               <div class="vertical-line animate" data-animate="zoomIn" data-duration="2.0s" data-delay="0.1s" data-offset="0"></div>
 
-              <!-- <a class="animated fadeInDown infinite" href="#secondPage"> <img class="down" src="img/down.png" alt=""> </a> -->
-
           </div>
 
-          <div class="section" data-anchor="secondPage">
+      </section>
+
+      <!-- PHOTO PARALLAX -->
+      <div class="parallax" data-parallax-bg-image="img/bureau.jpg" data-parallax-bg-position="center center" data-parallax-bg-size="contain" data-parallax-speed= ".6" data-parallax-direction= "up">
+      </div>
+
+      <section class="info">
+
+          <div class="section">
 
                 <article class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">
 
                   <h3 class="animate" data-animate="fadeInUp" data-duration="2.0s" data-delay="0.1s" data-offset="0">Ce que nous faisons</h3>
 
-                  <ul class="animate" data-animate="fadeInUp" data-duration="2.0s" data-delay="0.1s" data-offset="0">
+                  <ul class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">
 
                     <li>Design / UI design</li>
                     <li>Développement Front end & Back end</li>
+                    <li>Back office sur mesure / Implémentation Google Analytics</li>
                     <li>Responsive multi-support</li>
                     <li>Respect des normes W3C</li>
                     <li>Code propre et SEO friendly</li>
 
                   </ul>
 
+                  <h4 class="animate" data-animate="fadeInUp" data-duration="2.0s" data-delay="0.1s" data-offset="0">Technologies utilisées</h4>
+
+                  <ul class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">
+
+                    <li>HTML 5 / CSS 3</li>
+                    <li>Sass</li>
+                    <li>Javascript</li>
+                    <li>jQuery</li>
+                    <li>Php 7</li>
+                    <li>Laravel</li>
+                    <li>Wordpress</li>
+                    <li>Git</li>
+
+                  </ul>
+
                 </article>
 
                 <div class="vertical-line animate" data-animate="zoomIn" data-duration="2.0s" data-delay="0.1s" data-offset="0"></div>
-
-                <!-- <a class="animated fadeInDown infinite" href="#thirdPage"> <img class="down" src="img/down.png" alt=""> </a> -->
-
-          </div>
-
-          <div class="section">
-
-            <article class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">
-
-              <h3 class="animate" data-animate="fadeInUp" data-duration="2.0s" data-delay="0.1s" data-offset="0">Les technologies que nous utilisons</h3>
-
-              <div class="img-wrapper animate" data-animate="zoomIn" data-duration="1.0s" data-delay="0.1s" data-offset="0">
-
-                  <img src="img/html-css.png" alt="html css logo">
-                  <img src="img/sass.png" alt="sass logo">
-                  <img src="img/js.png" alt="javascript logo">
-                  <img src="img/jquery.png" alt="jQuey logo">
-                  <img src="img/php.png" alt="php logo">
-                  <img src="img/laravel.png" alt="laravel logo">
-                  <img src="img/wp.png" alt="wordpress logo">
-
-              </div> <!-- End: img-wrapper -->
-
-            </article>
-
-            <div class="vertical-line animate" data-animate="zoomIn" data-duration="2.0s" data-delay="0.1s" data-offset="0"></div>
-
-            <!-- <a class="animated fadeInDown infinite" href="#thirdPage"> <img class="down" src="img/down.png" alt=""> </a> -->
 
           </div>
 
@@ -139,12 +129,13 @@
                   <h3 class="animate" data-animate="fadeInUp" data-duration="2.0s" data-delay="0.1s" data-offset="0">Services complémentaires</h3>
                   <h5>A+F s'appuie sur un réseau de professionnels afin d'étendre sa gamme de services</h5>
 
-                  <ul class="animate" data-animate="fadeInUp" data-duration="2.0s" data-delay="0.1s" data-offset="0">
+                  <ul class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">
 
                     <li>Graphisme (conception identité / logotype / charte graphique)</li>
                     <li>Photo / vidéo</li>
                     <li>Communication digitale / community management</li>
                     <li>Référencement</li>
+                    <li>Rédaction de contenus</li>
                     <li>Traduction</li>
 
                   </ul>
@@ -155,8 +146,6 @@
 
       </section> <!-- END: info -->
 
-    </div> <!-- End: fulscreen -->
-
 </main>
 
 <!--**** FOOTER ****-->
@@ -166,6 +155,7 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/overlay.js"></script>
 <script src="js/scrolla.jquery.min.js"></script>
+<script src="js/parallax-background.min.js"></script>
 <script src="js/main.js"></script>
 
 </body>

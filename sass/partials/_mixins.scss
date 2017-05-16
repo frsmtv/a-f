@@ -2,8 +2,17 @@
 $mainColor: #c59437;
 // $navFont: 'PT Mono', monospace;
 $navFont: serif;
-// $mainFont: 'Lato', sans-serif;
-$mainFont: serif;
+$mainFont: 'Wask New';
+
+@font-face {
+    font-family: 'Wask New';
+    src: url('../fonts/wask_new_italic-webfont.woff'),
+    url('../fonts/wask_new_bold_italic-webfont.woff'),
+    url('../fonts/wask_new_italic-webfont.eot'),
+    url('../fonts/wask_new_bold_italic-webfont.eot'),
+    url('../fonts/wask_new_bold_italic-webfont.otf'),
+    url('../fonts/wask_new_bold-webfont.otf');
+}
 
 .flash {
   border-right: 1px solid $mainColor;

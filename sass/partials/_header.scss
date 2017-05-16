@@ -13,15 +13,13 @@ header {
     top: 0;
     width: 100%;
     z-index: 9999;
-    font-family: $navFont;
-    font-style: italic;
     letter-spacing: 4px;
     @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
     display: none;
     }
     a {
       position: fixed;
-      font-size: .8rem;
+      font-size: 1rem;
       padding: 0 0 10px;
       @media only screen and (min-width : 1224px) and (max-device-width : 1824px){
         font-size: .7rem;
@@ -52,14 +50,13 @@ header {
   }
   #mobile-nav {
     display: none;
-    padding: 5%;
     @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
     display: block;
     }
     h1 {
       position: absolute;
       z-index: 1;
-      top: 20px;
+      top: 10px;
       left: 20px;
       color: $mainColor;
       font-size: 2rem;
@@ -71,8 +68,6 @@ header {
       }
     }
     span {
-      margin-top: 20px;
-      font-family: $navFont;
       font-size: 1.5rem;
       font-weight: 100;
       line-height: .8;

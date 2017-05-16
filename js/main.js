@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+   // PARALLAX
+   $('.parallax').parallaxBackground();
+
     // PORTFOLIO PAGE ANIMATION HOVER
     $('#portfolio li').mouseover(function(){
         $('#portfolio li img').css('opacity', '.8');

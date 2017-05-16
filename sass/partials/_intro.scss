@@ -1,11 +1,5 @@
 @import "mixins";
 
-#intro {
-  // background: url('../img/bg.jpg');
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // background-position: center bottom;
-}
 #intro, #success {
   -webkit-transition: all 200ms ease-in;
   -moz-transition: all 200ms ease-in;
@@ -26,6 +20,7 @@
     font-family: $mainFont;
     text-transform: uppercase;
     font-size: 4rem;
+    font-weight: bold;
     letter-spacing: 2px;
     text-align: center;
     line-height: 1.5!important;
@@ -35,8 +30,8 @@
     hyphens: none;
 
     @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
-    font-size: 1.5rem;
-    text-align: justify;
+    font-size: 2rem;
+    text-align: center;
     letter-spacing: 2px;
     padding: 5vh;
     }

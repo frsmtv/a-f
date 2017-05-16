@@ -1,19 +1,19 @@
 @import "mixins";
 
-#info {
+.info {
   div.section {
-    height: 100vh;
+    margin-bottom: 200px;
     @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
-      height: auto;
       margin-bottom: 50px;
     }
     &:last-child {
-      height: 50vh;
+      // height: 50vh;
       @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
         height: auto;
       }
     }
     p {
+      font-size: 1.6rem;
       color: #000;
       position: relative;
       text-align: justify;
@@ -31,12 +31,11 @@
         font-size: 4rem;
         text-transform: uppercase;
         @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
-          font-size: 2rem;
         }
       }
     }
     q {
-      font-style: italic;
+      font-size: 1.6rem;
       padding: 2%;
     }
     h3, h4 {
@@ -48,21 +47,26 @@
       color: $mainColor;
       // padding: 1%;
       @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
-      font-size: 2rem;
+      font-size: 2.5rem;
       line-height: 1;
       }
     }
     h5{
       // text-transform: uppercase;
       font-size: 1.4rem;
-      color: #000;
-      margin-top: -20px;
-      margin-bottom: 40px;
+      margin-top: -40px;
+      margin-bottom: 80px;
       letter-spacing: 2px;
+      @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
+      font-size: 1.2rem;
+      line-height: 1;
+      margin-top: -20px;
+      }
     }
     div.vertical-line {
+      display: none;
       width: 1px;
-      height: 350px;
+      height: 250px;
       background: $mainColor;
       margin: auto;
       margin-top: 40px;
@@ -81,71 +85,11 @@
         color: #000;
         letter-spacing: 2px;
         padding: 2%;
-        font-family: $navFont;
-        font-size: 95%;
-        line-height: 2;
+        font-size: 1.6rem;
+        line-height: 1.4;
         padding: 0;
         @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
-          font-size: 80%;
           padding: 2%;
-        }
-      }
-    }
-    // Arrows
-    img {
-      display: block;
-      margin: 0 auto;
-      height: 30px;
-      @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
-        height: 20px;
-      }
-      @media only screen and (min-width : 1224px) and (max-device-width : 1824px){
-        height: 25px;
-      }
-      -webkit-transition: all 200ms ease-in;
-      -moz-transition: all 200ms ease-in;
-      -ms-transition: all 200ms ease-in;
-      -o-transition: all 200ms ease-in;
-      transition: all 200ms ease-in;
-      &.down {
-        // position: absolute;
-        // left: 50%;
-        // bottom: 15vh;
-        margin-top: 10%;
-      }
-      &.up {
-        position: absolute;
-        left: 50%;
-        top: 0;
-      }
-      &.down:hover {
-        -moz-transform: scale(1) rotate(0deg) translateX(0px) translateY(10px) skewX(0deg) skewY(0deg);
-  -webkit-transform: scale(1) rotate(0deg) translateX(0px) translateY(10px) skewX(0deg) skewY(0deg);
-  -o-transform: scale(1) rotate(0deg) translateX(0px) translateY(10px) skewX(0deg) skewY(0deg);
-  -ms-transform: scale(1) rotate(0deg) translateX(0px) translateY(10px) skewX(0deg) skewY(0deg);
-  transform: scale(1) rotate(0deg) translateX(0px) translateY(10px) skewX(0deg) skewY(0deg);
-      }
-      &.up:hover {
-        -moz-transform: scale(1) rotate(0deg) translateX(0px) translateY(-10px) skewX(0deg) skewY(0deg);
-  -webkit-transform: scale(1) rotate(0deg) translateX(0px) translateY(-10px) skewX(0deg) skewY(0deg);
-  -o-transform: scale(1) rotate(0deg) translateX(0px) translateY(-10px) skewX(0deg) skewY(0deg);
-  -ms-transform: scale(1) rotate(0deg) translateX(0px) translateY(-10px) skewX(0deg) skewY(0deg);
-  transform: scale(1) rotate(0deg) translateX(0px) translateY(-10px) skewX(0deg) skewY(0deg);
-      }
-    }
-    .img-wrapper {
-      width: 100%;
-      margin-top: 60px;
-      margin-bottom: 50px;
-      display: flex;
-      justify-content: space-between;
-      @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
-      flex-direction: column;
-      }
-      img {
-        height: 30px;
-        @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
-        margin-bottom: 40px;
         }
       }
     }
