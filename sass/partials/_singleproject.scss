@@ -22,7 +22,7 @@ section.single-project {
   }
   p {
     color: #000;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     margin-bottom: 100px;
     @media only screen and (min-width : 1224px) and (max-device-width : 1824px){
       font-size: 1rem;
@@ -33,6 +33,9 @@ section.single-project {
     @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
       font-size: 1rem;
       margin-bottom: 50px;
+    }
+    span {
+      font-size: 1.8rem;
     }
   }
   img {
