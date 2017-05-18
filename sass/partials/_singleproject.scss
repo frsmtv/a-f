@@ -3,10 +3,14 @@
 section.single-project {
   width: 70%;
   text-align: center;
+
+  // smartphones Portrait & Landscape
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  width: 100vw;
+  }
   h2 {
     text-transform: uppercase;
     letter-spacing: 4px;
-    font-style: italic;
     font-weight: 100;
     font-size: 2rem;
     text-align: center;
@@ -41,6 +45,14 @@ section.single-project {
     span {
       font-size: 1.8rem;
       color: $mainColor;
+      /* iPhone 6Plus Portrait */
+      @media only screen
+        and (min-device-width: 414px)
+        and (max-device-width: 736px)
+        and (-webkit-min-device-pixel-ratio: 3)
+        and (orientation: portrait) {
+          font-size: 1.4rem;
+      }
     }
   }
   img {
@@ -57,7 +69,6 @@ section.single-project {
   }
   .single-nav {
     display: none;
-    // margin: 100px 0 100px 0;
     padding-bottom: 2%;
     padding-top: 2%;
     position: fixed;
@@ -69,6 +80,10 @@ section.single-project {
     ul {
       font-size: 1rem;
       letter-spacing: 2px;
+      // smartphones Portrait & Landscape
+      @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+      font-size: .2rem;
+      }
       li {
         display: inline;
         margin: 0 100px;
@@ -79,11 +94,9 @@ section.single-project {
           -o-transition: all 400ms ease-in;
           transition: all 400ms ease-in;
           text-transform: uppercase;
-          // border: 1px solid #000;
-          // padding: 1%;
+          // border: 1px sol
           &:hover {
             color: $mainColor;
-            // border: 1px solid $mainColor;
           }
         }
       }
