@@ -81,6 +81,7 @@ a.non-active {
   }
   &:hover {
     opacity: 1;
+    color: $mainColor;
   }
 
   &:hover::after {
@@ -93,6 +94,7 @@ a.non-active {
 }
 
 a.active {
+  color: $mainColor;
   text-transform: uppercase;
   letter-spacing: 2px;
   border-bottom: 2px solid $mainColor;
@@ -109,16 +111,24 @@ h1 {
   margin: 0 0 40px 0;
 }
 
-#frame {
-  display: none;
-  width: 75vw;
-  height: 75vh;
-  border: 10px solid #000;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%); /* Yep! */
+div.parallax {
+  height: 1000px;
+  width: 100%;
+  /*  iPad Portrait */
+  @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: portrait) {
+    height: 500px;
+    }
 
+  /* iPad Landscape */
+  @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: landscape) {
+      height: 600px;
+  }
 
 }
 

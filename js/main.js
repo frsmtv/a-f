@@ -21,6 +21,20 @@ $(document).ready(function() {
         }, 1800);
    });
 
+  //  PORTFOLIO SINGLE NAV TOGGLE ON SCROLL
+  var scroll_start = 0;
+      var startchange = $('body');
+      var offset = startchange.offset();
+      $(document).scroll(function() {
+          scroll_start = $(this).scrollTop();
+          if(scroll_start > offset.top) {
+             $('.single-nav').fadeIn('slow');
+          } else {
+            $('.single-nav').fadeOut('slow');
+          }
+      });
+
+
    //  NAV HOVER EFFECT ON SECTIONS
    // MAIN MENU
    $('#main-nav a').not('.active').mouseover(function(){
@@ -61,6 +75,9 @@ $(document).ready(function() {
      $('#houston-nav').fadeIn();
      $('#error q').fadeOut();
    })
+
+   // PARALLAX
+    $('.parallax').parallaxBackground();
 
    // SCROLLA
    $('.animate').scrolla();

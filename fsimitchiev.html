@@ -55,16 +55,6 @@
 
         </div> <!-- End: mobile-nav -->
 
-    <!-- **** PROJECTS NAV **** -->
-    <nav id="projects-nav">
-
-        <ul>
-            <!-- <li class="prev animated fadeInLeft"><a href="sixringcircus.html"><img src="img/prev.png" alt=""></a></li> -->
-            <li class="next animated fadeInRight"><a href="laetitiacros.html"><img src="img/next.png" alt=""></a></li>
-        </ul>
-
-    </nav> <!-- End: projects-nav -->
-
 </header>
 
 <!--**** MAIN CONTENT ****-->
@@ -74,7 +64,11 @@
     <section class="single-project">
 
         <!-- **** SINGLE PROJECT HEADING **** -->
-        <div class="single-project-heading animated fadeInDown">
+        <div class="single-project-heading animated fadeIn">
+
+            <!-- SCREENSHOT -->
+            <div class="parallax" data-parallax-bg-image="img/mockup-fsimitchiev.png" data-parallax-bg-position="center bottom" data-parallax-bg-size="contain" data-parallax-speed= ".5" data-parallax-direction= "down">
+            </div>
 
             <h2>francois simitchiev</h2>
 
@@ -86,20 +80,26 @@
 
         </div> <!-- End: single-project-heading -->
 
-        <!-- **** SINGLE PROJECT CONTENT **** -->
-        <div class="slider animated fadeInUp">
+        <!-- SCREENSHOT -->
+        <!-- <img class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0" src="img/screenshot-fsimitchievb.png" alt=""> -->
 
-          <div>
-            <img src="img/screenshot-fsimitchiev.png" alt="">
-            <img src="img/screenshot-fsimitchiev2.png" alt="">
-            <img src="img/screenshot-fsimitchiev3.png" alt="">
-          </div>
+        <!-- SCREENSHOT -->
+        <img class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0" src="img/screenshot-fsimitchiev2.png" alt="">
 
-          <!-- <div>
-            <img src="img/screenshot-iray2.png" alt="">
-          </div> -->
+        <hr>
 
-        </div> <!-- End: .slider -->
+        <!-- SINGLE BOTTOM NAV -->
+        <div class="single-nav">
+
+            <ul>
+
+                <li><a href="#">projet précédent</a></li>
+                <li><a href="#">voir le site</a></li>
+                <li><a href="#">projet suivant</a></li>
+
+            </ul>
+
+        </div>
 
     </section>
 
@@ -107,7 +107,8 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/overlay.js"></script>
-<script src="js/slick.min.js"></script>
+<script src="js/parallax-background.min.js"></script>
+<script src="js/scrolla.jquery.min.js"></script>
 <script src="js/main.js"></script>
 
 </body>

@@ -74,48 +74,4 @@ header {
       text-transform: uppercase;
     }
   }
-  nav#projects-nav {
-    ul {
-      img {
-        width: 30px;
-        -webkit-transition: all 200ms ease-in;
-        -moz-transition: all 200ms ease-in;
-        -ms-transition: all 200ms ease-in;
-        -o-transition: all 200ms ease-in;
-        transition: all 200ms ease-in;
-        @media only screen and (min-width : 1224px) and (max-device-width : 1824px){
-          width: 20px;
-        }
-        @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
-          width: 20px;
-        }
-      }
-      li.prev {
-        position: fixed;
-        left: 5%;
-        top: 50%;
-        padding: 2%;
-        img:hover {
-          -moz-transform: scale(1) rotate(0deg) translateX(-10px) translateY(0px) skewX(0deg) skewY(0deg);
-    -webkit-transform: scale(1) rotate(0deg) translateX(-10px) translateY(0px) skewX(0deg) skewY(0deg);
-    -o-transform: scale(1) rotate(0deg) translateX(-10px) translateY(0px) skewX(0deg) skewY(0deg);
-    -ms-transform: scale(1) rotate(0deg) translateX(-10px) translateY(0px) skewX(0deg) skewY(0deg);
-    transform: scale(1) rotate(0deg) translateX(-10px) translateY(0px) skewX(0deg) skewY(0deg);
-        }
-      }
-      li.next {
-        position: fixed;
-        right: 5%;
-        top: 50%;
-        padding: 2%;
-        img:hover {
-          -moz-transform: scale(1) rotate(0deg) translateX(10px) translateY(0px) skewX(0deg) skewY(0deg);
-    -webkit-transform: scale(1) rotate(0deg) translateX(10px) translateY(0px) skewX(0deg) skewY(0deg);
-    -o-transform: scale(1) rotate(0deg) translateX(10px) translateY(0px) skewX(0deg) skewY(0deg);
-    -ms-transform: scale(1) rotate(0deg) translateX(10px) translateY(0px) skewX(0deg) skewY(0deg);
-    transform: scale(1) rotate(0deg) translateX(10px) translateY(0px) skewX(0deg) skewY(0deg);
-        }
-      }
-    }
-  }
 }
