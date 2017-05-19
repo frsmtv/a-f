@@ -3,7 +3,8 @@
     top: 20px;
     right: 20px;
     cursor: pointer;
-    border: 1px solid #c59437;
+    font-size: 2rem;
+    /*border: 1px solid #c59437;*/
     padding: 2%;
     margin-top: 0!important;
     z-index: 2001;
@@ -31,7 +32,7 @@
     opacity: .7;
 }
 .toggle-active .bar {
-    background-color: red;
+    background-color: #333;
 }
 .toggle-active .top {
     -webkit-transform: translateY(6px) translateX(0) rotate(45deg);
