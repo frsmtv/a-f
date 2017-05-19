@@ -31,9 +31,17 @@ section.single-project {
     // @media only screen and (min-width : 640px) {
     //   height: 400px;
     // }
-    // @media only screen and (max-width : 640px) {
-    //   height: 300px;
-    // }
+    @media only screen and (max-width : 740px) {
+      display: none;
+    }
+  }
+  .mockup-nofx {
+    img {
+      border: none;
+    }
+    @media only screen and (min-width : 768px) {
+      display: none;
+    }
   }
   h2 {
     text-transform: uppercase;
@@ -88,9 +96,6 @@ section.single-project {
     padding: 1%;
     border: solid 1px $mainColor;
     margin-bottom: 100px;
-    &:first-child {
-      border: none;
-    }
   }
   hr {
     width: 10%;
