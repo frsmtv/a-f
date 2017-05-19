@@ -29,12 +29,18 @@
     -ms-hyphens: none;
     hyphens: none;
 
-    @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
-    font-size: 2rem;
+    @media only screen and (min-device-width : 1280px) {
+    font-size: 8rem;
     text-align: center;
     letter-spacing: 2px;
     padding: 5vh;
     }
+    // @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
+    // // font-size: 2rem;
+    // text-align: center;
+    // letter-spacing: 2px;
+    // padding: 5vh;
+    // }
     i {
       font-size: 1rem;
       vertical-align: super;

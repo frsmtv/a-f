@@ -6,7 +6,31 @@ section.single-project {
 
   // smartphones Portrait & Landscape
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  width: 100vw;
+  // width: 100vw;
+  }
+  div.parallax {
+    height: 750px;
+    width: 100%;
+
+    // Large screens
+    @media only screen and (min-width : 1280px) {
+      height: 800px;
+    }
+    @media only screen and (min-width : 1380px) {
+      height: 900px;
+    }
+    @media only screen and (min-width : 1540px) {
+      height: 1000px;
+    }
+    @media only screen and (min-width : 1720px) {
+      height: 1200px;
+    }
+    @media only screen and (max-width : 800px) {
+      height: 500px;
+    }
+    @media only screen and (max-width : 600px) {
+      height: 400px;
+    }
   }
   h2 {
     text-transform: uppercase;
@@ -78,15 +102,16 @@ section.single-project {
     color: #000;
     background: #fff;
     ul {
+      display: flex;
+      justify-content: space-around;
       font-size: 1rem;
       letter-spacing: 2px;
-      // smartphones Portrait & Landscape
-      @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-      font-size: .2rem;
+      @media only screen and (max-width : 980px) {
+        font-size: .8rem;
       }
       li {
-        display: inline;
-        margin: 0 100px;
+        // display: inline;
+        // margin: 0 100px;
         a {
           -webkit-transition: all 400ms ease-in;
           -moz-transition: all 400ms ease-in;
