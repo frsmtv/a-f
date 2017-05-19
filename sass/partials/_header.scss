@@ -52,25 +52,31 @@ header {
     @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
     display: block;
     }
-    h1 {
-      position: absolute;
-      z-index: 1;
-      top: 10px;
-      left: 20px;
-      color: $mainColor;
-      font-size: 2rem;
-      text-align: left;
-      span {
-        font-size: 50%;
-        font-family: $mainFont;
-        vertical-align: middle;
-      }
-    }
-    span {
+    #toggle {
       font-size: 1.5rem;
-      font-weight: 100;
-      line-height: .8;
-      text-transform: uppercase;
+      position: fixed;
+      top: 20px;
+      right: 20px;
     }
+    // h1 {
+    //   position: absolute;
+    //   z-index: 1;
+    //   top: 10px;
+    //   left: 20px;
+    //   color: $mainColor;
+    //   font-size: 2rem;
+    //   text-align: left;
+    //   span {
+    //     font-size: 50%;
+    //     font-family: $mainFont;
+    //     vertical-align: middle;
+    //   }
+    // }
+    // span {
+    //   font-size: 1.5rem;
+    //   font-weight: 100;
+    //   line-height: .8;
+    //   text-transform: uppercase;
+    // }
   }
 }
