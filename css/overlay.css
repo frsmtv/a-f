@@ -31,7 +31,7 @@
     opacity: .7;
 }
 .toggle-active .bar {
-    background-color: #333;
+    background-color: red;
 }
 .toggle-active .top {
     -webkit-transform: translateY(6px) translateX(0) rotate(45deg);
