@@ -76,10 +76,10 @@ $(document).ready(function() {
      $('#error q').fadeOut();
    })
 
-   // PARALLAX
-    $('.parallax').parallaxBackground();
-
    // SCROLLA
    $('.animate').scrolla();
+
+   // PARALLAX
+    $('.parallax').parallaxBackground();
 
 });
