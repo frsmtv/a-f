@@ -88,6 +88,9 @@ section.single-project {
     padding: 1%;
     border: solid 1px $mainColor;
     margin-bottom: 100px;
+    &:first-child {
+      border: none;
+    }
   }
   hr {
     width: 10%;
