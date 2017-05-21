@@ -2,13 +2,11 @@ $(document).ready(function() {
 
     // PORTFOLIO PAGE ANIMATION HOVER
     $('#portfolio li').mouseover(function(){
-        $('#portfolio li img').css('opacity', '.8');
-        $(this).find('div.status').show().addClass('animated fadeIn');
+        // $('#portfolio li img').css('opacity', '.8');
     });
 
     $('#portfolio li').mouseout(function(){
-        $('#portfolio li img').css('opacity', '1');
-        $(this).find('div.status').hide();
+        // $('#portfolio li img').css('opacity', '1');
     });
 
     // CONTACT FORM ANIMATION

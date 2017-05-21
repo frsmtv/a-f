@@ -76,7 +76,7 @@ section.single-project {
       -moz-transition: all 200ms ease-in;
       -ms-transition: all 200ms ease-in;
       -o-transition: all 200ms ease-in;
-      transition: all 400ms ease-in;
+      transition: all 200ms ease-in;
       &:hover {
         color: $mainColor;
       }
@@ -111,10 +111,22 @@ section.single-project {
   }
   img {
     width: 100%;
-    margin: auto;
-    padding: 1%;
-    border: solid 1px $mainColor;
-    margin-bottom: 100px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    -webkit-transition: all 400ms ease-in;
+    -moz-transition: all 400ms ease-in;
+    -ms-transition: all 400ms ease-in;
+    -o-transition: all 400ms ease-in;
+    transition: all 400ms ease-in;
+    &:hover {
+      -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(0%);
+    }
+  }
+  div#mosaic {
+    img {
+
+    }
   }
   hr {
     width: 10%;
