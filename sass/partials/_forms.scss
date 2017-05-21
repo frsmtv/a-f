@@ -8,6 +8,10 @@ form {
   label.active, input.field, textarea {
     color: $mainColor!important;
   }
+  textarea {
+    color: #000!important;
+    letter-spacing: 1.5px!important;
+  }
   textarea:focus {
     border-bottom: 1px solid $mainColor!important;
     box-shadow: none!important;
@@ -17,6 +21,10 @@ form {
   }
   .switch label input[type=checkbox]:checked + .lever {
     background-color: $mainColor!important;
+  }
+  input {
+    color: #000;
+    letter-spacing: 1.5px;
   }
   input:focus {
     border-bottom: 1px solid $mainColor!important;
