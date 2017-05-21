@@ -110,13 +110,13 @@ section.single-project {
   }
   .single-nav {
     display: none;
-    padding-bottom: 2%;
-    padding-top: 2%;
+    padding-bottom: 1%;
+    padding-top: 1%;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    color: #000;
+    color: $mainColor;
     background: #fff;
     ul {
       display: flex;
