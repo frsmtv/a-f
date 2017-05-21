@@ -1,13 +1,22 @@
 $(document).ready(function() {
 
     // PORTFOLIO PAGE ANIMATION HOVER
-    $('#portfolio li').mouseover(function(){
-        // $('#portfolio li img').css('opacity', '.8');
+    $('.portfolio-item').mouseover(function(){
+        $('.active').css('color', '#000');
+        $('.active').css('border-bottom', '2px solid #000');
+        $(this).find('h2').css('color', '#000').css('margin-top', '-25vh').css('margin-left', '-25vw').css('font-size', '4rem');
+        $(this).find('img').css('width', '61%');
+        $(this).find('h2').find('span').css('display', 'block');
     });
 
-    $('#portfolio li').mouseout(function(){
-        // $('#portfolio li img').css('opacity', '1');
+    $('.portfolio-item').mouseout(function(){
+        $('.active').css('color', '');
+        $('.active').css('border-bottom', '2px solid');
+        $(this).find('h2').css('color', '').css('margin-top', '').css('margin-left', '').css('font-size', '');
+        $(this).find('img').css('width', '');
+        $(this).find('h2').find('span').css('display', '');
     });
+
 
     // CONTACT FORM ANIMATION
     $('#formlink').click(function(){
@@ -52,8 +61,5 @@ $(document).ready(function() {
 
    // SCROLLA
    $('.animate').scrolla();
-
-   // PARALLAX
-    $('.parallax').parallaxBackground();
 
 });

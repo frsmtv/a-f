@@ -3,7 +3,6 @@
 section#portfolio {
   @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
   overflow-x: hidden;
-  // margin-top: 200px;
   }
   ul {
     li {
@@ -31,7 +30,7 @@ section#portfolio {
         margin: 40px 0;
       }
       img {
-        width: 100%;
+        width: 60%;
         // border: 1px solid $mainColor;
         -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
         filter: grayscale(100%);
@@ -43,9 +42,9 @@ section#portfolio {
         &:hover {
           -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
           filter: grayscale(0%);
-          -webkit-box-shadow: 0px 21px 32px 0px rgba(192, 192, 192, 1);
-          -moz-box-shadow: 0px 21px 32px 0px rgba(192, 192, 192, 1);
-          box-shadow: 0px 21px 32px 0px rgba(192, 192, 192, 1);
+          // -webkit-box-shadow: 0px 21px 32px 0px rgba(192, 192, 192, 1);
+          // -moz-box-shadow: 0px 21px 32px 0px rgba(192, 192, 192, 1);
+          // box-shadow: 0px 21px 32px 0px rgba(192, 192, 192, 1);
         }
         @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
           width: 100%;
@@ -56,24 +55,17 @@ section#portfolio {
         letter-spacing: 4px;
         font-weight: 100;
         font-size: 2rem;
-        margin-top: 40px;
+        -webkit-transition: all 200ms ease-in;
+        -moz-transition: all 200ms ease-in;
+        -ms-transition: all 200ms ease-in;
+        -o-transition: all 200ms ease-in;
+        transition: all 200ms ease-in;
         @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
           font-size: 1rem;
         }
-      }
-      div.status {
-        display: none;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        color: #000;
-        i {
-          -moz-transition: all 200ms ease-in;
-          -ms-transition: all 200ms ease-in;
-          -o-transition: all 200ms ease-in;
-          transition: all 200ms ease-in;
-          &:hover {
-            opacity: .6;
-          }
+        span {
+          display: none;
+          font-size: 1rem;
         }
       }
     }
