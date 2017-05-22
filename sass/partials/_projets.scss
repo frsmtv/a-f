@@ -69,6 +69,12 @@ section#portfolio {
           font-size: 1rem;
         }
       }
+      &:first-child {
+        margin-top: 20vh;
+      }
+      &:last-child {
+        margin-bottom: 20vh;
+      }
       &.right {
         h2 {
           position: absolute;
@@ -81,6 +87,20 @@ section#portfolio {
           position: absolute;
           top: 150px;
           left: 100px;
+        }
+      }
+      &.left-large {
+        h2 {
+          position: absolute;
+          top: 150px;
+          left: -150px;
+        }
+      }
+      &.right-large {
+        h2 {
+          position: absolute;
+          top: 150px;
+          right: -150px;
         }
       }
     }
