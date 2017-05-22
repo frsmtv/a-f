@@ -4,15 +4,15 @@ $(document).ready(function() {
     $('.portfolio-item').mouseover(function(){
         $('.active').css('color', '#000');
         $('.active').css('border-bottom', '2px solid #000');
-        $(this).find('h2').css('color', '#000').css('margin-top', '-25vh').css('margin-left', '-25vw').css('font-size', '4rem');
-        $(this).find('img').css('width', '61%');
+        $(this).find('h2').css('color', '#000').css('font-size', '4rem');
+        $(this).find('img').css('width', '70%');
         $(this).find('h2').find('span').css('display', 'block');
     });
 
     $('.portfolio-item').mouseout(function(){
         $('.active').css('color', '');
         $('.active').css('border-bottom', '2px solid');
-        $(this).find('h2').css('color', '').css('margin-top', '').css('margin-left', '').css('font-size', '');
+        $(this).find('h2').css('color', '').css('font-size', '');
         $(this).find('img').css('width', '');
         $(this).find('h2').find('span').css('display', '');
     });
