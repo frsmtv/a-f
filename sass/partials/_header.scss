@@ -52,6 +52,9 @@ header {
     @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
     display: block;
     }
+    #toggle {
+      position: fixed;
+    }
     // h1 {
     //   position: absolute;
     //   z-index: 1;
