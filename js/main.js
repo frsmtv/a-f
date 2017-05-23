@@ -58,7 +58,4 @@ $(document).ready(function() {
      $('#error q').fadeOut();
    })
 
-   // SCROLLA
-   $('.animate').scrolla();
-
 });
