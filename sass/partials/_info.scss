@@ -1,13 +1,18 @@
 @import "mixins";
 
 .info {
+  margin-top: 0!important;
+  padding: 0!important;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Yep! */
   div.section {
     // margin-top: -40px;
     @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
       margin-bottom: 50px;
     }
     &:last-child {
-      margin-bottom: 20vh;
       @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
         height: auto;
       }
@@ -28,7 +33,7 @@
       }
       span#brand {
         color: $mainColor;
-        font-size: 4rem;
+        font-size: 3rem;
         text-transform: uppercase;
         @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
         }
@@ -47,6 +52,7 @@
       }
       article {
         width: 40%;
+        margin-right: 20px;
         ul {
           padding: 0;
           li {
@@ -55,6 +61,9 @@
             color: #000;
             line-height: 1.5;
           }
+        }
+        &:last-child {
+          margin-right: 0;
         }
       }
     }

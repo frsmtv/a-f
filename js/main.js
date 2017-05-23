@@ -5,7 +5,7 @@ $(document).ready(function() {
         $('.active').css('color', '#000');
         $('.active').css('border-bottom', '2px solid #000');
         $(this).find('h2').css('color', '#000').css('font-size', '3rem');
-        $(this).find('img').css('width', '62%');
+        $(this).find('img').css('width', '70%');
         $(this).find('h2').find('span').css('display', 'block');
     });
 
@@ -16,15 +16,6 @@ $(document).ready(function() {
         $(this).find('img').css('width', '');
         $(this).find('h2').find('span').css('display', '');
     });
-
-    // SINGLE-PROJECT ANIMATIONS
-    // $('.screenshot').mouseover(function(){
-    //     $(this).css('width', '100%');
-    // });
-    //
-    // $('.screenshot').mouseout(function(){
-    //     $(this).css('width', '');
-    // });
 
     // CONTACT FORM ANIMATION
     $('#formlink').click(function(){

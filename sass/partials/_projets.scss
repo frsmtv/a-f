@@ -9,7 +9,6 @@ section#portfolio {
       position: relative;
       height: 100vh;
       @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
-        height: auto;
       }
       text-align: center;
       display: inline-block;
@@ -35,11 +34,11 @@ section#portfolio {
         // border: 1px solid $mainColor;
         -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
         filter: grayscale(100%);
-        -webkit-transition: all 200ms ease-in;
-        -moz-transition: all 200ms ease-in;
-        -ms-transition: all 200ms ease-in;
-        -o-transition: all 200ms ease-in;
-        transition: all 200ms ease-in;
+        -webkit-transition: all 300ms ease-in;
+        -moz-transition: all 300ms ease-in;
+        -ms-transition: all 300ms ease-in;
+        -o-transition: all 300ms ease-in;
+        transition: all 300ms ease-in;
         &:hover {
           -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
           filter: grayscale(0%);
@@ -48,7 +47,6 @@ section#portfolio {
           // box-shadow: 0px 21px 32px 0px rgba(192, 192, 192, 1);
         }
         @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
-          width: 100%;
         }
       }
       h2 {
@@ -56,13 +54,24 @@ section#portfolio {
         letter-spacing: 4px;
         font-weight: 100;
         font-size: 2rem;
-        -webkit-transition: all 200ms ease-in;
-        -moz-transition: all 200ms ease-in;
-        -ms-transition: all 200ms ease-in;
-        -o-transition: all 200ms ease-in;
-        transition: all 200ms ease-in;
+        -webkit-transition: all 300ms ease-in;
+        -moz-transition: all 300ms ease-in;
+        -ms-transition: all 300ms ease-in;
+        -o-transition: all 300ms ease-in;
+        transition: all 300ms ease-in;
         @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
           font-size: 1rem;
+        }
+        @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        font-size: 1.4rem;
+        }
+        /* ----------- iPhone 6+ ----------- */
+        /* Portrait and Landscape */
+        @media only screen
+          and (min-device-width: 414px)
+          and (max-device-width: 736px)
+          and (-webkit-min-device-pixel-ratio: 3) {
+            font-size: 1.4rem;
         }
         span {
           display: none;
@@ -94,6 +103,23 @@ section#portfolio {
           position: absolute;
           top: 150px;
           left: -150px;
+          @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+            left: -75px;
+          }
+          /* ----------- iPhone 6+ ----------- */
+          /* Portrait and Landscape */
+          @media only screen
+            and (min-device-width: 414px)
+            and (max-device-width: 736px)
+            and (-webkit-min-device-pixel-ratio: 3) {
+              left: 20vw;
+              top: 250px;
+          }
+          @media only screen and (max-width : 768px) {
+            position: relative;
+            margin-top: -150px;
+            display: table-header-group;
+          }
         }
       }
       &.right-large {
@@ -101,6 +127,23 @@ section#portfolio {
           position: absolute;
           top: 150px;
           right: -150px;
+          @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+            right: -75px;
+          }
+          /* ----------- iPhone 6+ ----------- */
+          /* Portrait and Landscape */
+          @media only screen
+            and (min-device-width: 414px)
+            and (max-device-width: 736px)
+            and (-webkit-min-device-pixel-ratio: 3) {
+              right: 20vw;
+              top: 170px;
+          }
+          @media only screen and (max-width : 768px) {
+            position: relative;
+            margin-top: -150px;
+            display: table-header-group;
+          }
         }
       }
     }
