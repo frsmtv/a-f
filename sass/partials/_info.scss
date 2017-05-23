@@ -1,12 +1,14 @@
 @import "mixins";
 
 .info {
-  margin-top: 0!important;
-  padding: 0!important;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%); /* Yep! */
+  @media only screen and (min-width : 768px) {
+    margin-top: 0!important;
+    padding: 0!important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Yep! */
+  }
   div.section {
     // margin-top: -40px;
     @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
