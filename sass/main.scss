@@ -143,6 +143,8 @@ main {
     }
     button {
       color: $mainColor;
+      font-style: italic;
+      text-transform: uppercase;
       background: #000;
       border: 1px solid $mainColor;
       &:hover {
