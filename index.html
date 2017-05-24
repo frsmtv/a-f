@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="a+f">
-    <meta name="description" content="a+f est un studio web basé à Lyon.">
-    <title>a+f - Studio web | Lyon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="A+F">
+    <meta name="description" content="A+F est un studio web basé à Lyon. Nous concevons et développons des sites web sur mesure, adaptés à tous les supports numériques.">
+    <title>A+F - Studio web Lyon | Création de sites web</title>
 
     <!-- FONTS -->
 
@@ -77,6 +77,18 @@
 
 <!-- MAIN CONTENT -->
 <main>
+
+  <div class="js-cookie-consent cookie-consent animated bounceInDown">
+
+   <span class="cookie-consent__message">
+       {!! trans('cookieConsent::texts.message') !!}
+   </span>
+
+   <button class="js-cookie-consent-agree cookie-consent__agree">
+       {{ trans('cookieConsent::texts.agree') }}
+   </button>
+
+</div>
 
     <!-- INTRO -->
     <div id="intro">

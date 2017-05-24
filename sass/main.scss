@@ -130,6 +130,19 @@ h1 {
 }
 
 main {
+  .js-cookie-consent, .cookie-consent {
+    background: #000;
+    padding: 2px;
+    text-align: center;
+    span {
+      color: #fff;
+    }
+    button {
+      color: $mainColor;
+      background: #000;
+      border: 1px solid $mainColor;
+    }
+  }
   section {
     -webkit-transition: all 200ms ease-in;
     -moz-transition: all 200ms ease-in;
