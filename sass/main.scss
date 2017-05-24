@@ -141,7 +141,12 @@ main {
     left: 0;
     right: 0;
     margin: auto;
-    width: 70%;
+    // width: 70%;
+//     -moz-transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(-25deg);
+// -webkit-transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(-25deg);
+// -o-transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(-25deg);
+// -ms-transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(-25deg);
+// transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(-25deg);
     span {
       color: #fff;
     }
