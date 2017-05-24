@@ -134,6 +134,7 @@ main {
     padding: 15px;
     background: #111;
     text-align: center;
+    letter-spacing: 2px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -145,6 +146,7 @@ main {
       color: $mainColor;
       font-style: italic;
       text-transform: uppercase;
+      letter-spacing: 2px;
       background: #000;
       border: 1px solid $mainColor;
       &:hover {
