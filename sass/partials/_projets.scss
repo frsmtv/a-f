@@ -129,8 +129,8 @@ section#portfolio {
       &.right-large {
         h2 {
           position: absolute;
-          top: 150px;
-          right: -150px;
+          top: 200px;
+          right: 150px;
           @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
             right: -75px;
           }

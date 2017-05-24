@@ -55,6 +55,9 @@
       article {
         width: 40%;
         margin-right: 20px;
+        @media only screen and (max-device-width : 740px) {
+          width: 100%;
+        }
         ul {
           padding: 0;
           li {
@@ -78,7 +81,6 @@
       color: $mainColor;
       // padding: 1%;
       @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
-      font-size: 2.5rem;
       line-height: 1;
       }
     }
