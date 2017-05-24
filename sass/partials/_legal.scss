@@ -26,6 +26,17 @@
   line-height: 1;
   p {
     font-size: 1rem;
+    span {
+      color: $mainColor;
+    }
+    ul {
+      li {
+        line-height: 1;
+        a:hover {
+          color: $mainColor;
+        }
+      }
+    }
   }
   p:last-child {
     font-size: 90%;;
