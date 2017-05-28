@@ -135,8 +135,11 @@ section#portfolio {
           }
           @media only screen and (max-width : 768px) {
             position: relative;
-            margin-top: -150px;
-            display: table-header-group;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: -50px;
+            // margin-top: -150px;
           }
         }
       }
@@ -159,8 +162,11 @@ section#portfolio {
           }
           @media only screen and (max-width : 768px) {
             position: relative;
-            margin-top: -150px;
-            display: table-header-group;
+            // margin-top: -150px;
+            left: 0;
+            right: 0;
+            top: -50px;
+            margin: auto;
           }
         }
       }
