@@ -47,6 +47,14 @@
     }
   }
 }
+#homepage {
+  background: url('../img/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  nav#main-nav {
+    color: $mainColor;
+  }
+}
 #success {
   p {
     font-size: 3rem;
