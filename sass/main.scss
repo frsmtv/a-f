@@ -152,7 +152,6 @@ main {
       background: #000;
       padding: 1%;
       border: 1px solid $mainColor;
-      border-radius: 10px;
       -webkit-transition: all 200ms ease-in;
       -moz-transition: all 200ms ease-in;
       -ms-transition: all 200ms ease-in;
@@ -160,7 +159,8 @@ main {
       transition: all 200ms ease-in;
       &:hover {
         cursor: pointer;
-        opacity: .8;
+        background: $mainColor;
+        color: #000;
       }
     }
     a {
