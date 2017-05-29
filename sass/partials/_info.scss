@@ -43,6 +43,9 @@
     }
     q {
       font-size: 1.6rem;
+      @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
+        margin: 5%;
+      }
       // padding: 2%;
     }
     div.skills {
@@ -51,6 +54,7 @@
       margin-top: 100px;
       @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
         flex-direction: column;
+        padding: 5%;
       }
       article {
         width: 40%;
