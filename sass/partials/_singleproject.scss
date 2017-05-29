@@ -8,6 +8,9 @@ section.single-project {
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   // width: 100vw;
   }
+  @media only screen and (max-width : 740px) {
+    width: 100%;
+  }
   div.parallax {
     height: 900px;
     width: 100%;

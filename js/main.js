@@ -4,8 +4,8 @@ $(document).ready(function() {
     $('.portfolio-item').mouseover(function(){
         $('.active').css('color', '#000');
         $('.active').css('border-bottom', '2px solid #000');
-        $(this).find('h2').css('color', '#000').css('font-size', '3rem');
-        $(this).find('img').css('width', '70%');
+        $(this).find('h2').css('color', '#000').css('font-size', '2.5rem');
+        $(this).find('img').css('width', '65%');
         $(this).find('h2').find('span').css('display', 'block');
     });
 
